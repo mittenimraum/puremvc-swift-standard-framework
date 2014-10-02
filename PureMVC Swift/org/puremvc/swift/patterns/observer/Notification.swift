@@ -89,7 +89,7 @@ class Notification : INotification
     func description () -> String
     {
         
-        let str = String(format: "Notification Name: %@ %@ %@", self.name! , self.body.description , self.type! )
+        let str = String("Notification Name: \(self.name) \(self.body) \(self.type)" )
         
         return str
         

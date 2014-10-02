@@ -96,7 +96,7 @@ class Mediator : IMediator
     * with one 'case' entry per <code>INotification</code>
     * the <code>Mediator</code> is interested in.
     */
-    func handleNotification (notification: INotification )
+    func handleNotification ( notification: INotification ) -> Void
     {
     }
     

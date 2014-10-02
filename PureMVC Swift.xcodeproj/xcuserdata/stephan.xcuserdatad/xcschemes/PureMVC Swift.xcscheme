@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F364CF1962B43600846576"
-               BuildableName = "PureMVC Swift.framework"
-               BlueprintName = "PureMVC Swift"
+               BuildableName = "PureMVCSwift.framework"
+               BlueprintName = "PureMVCSwift"
                ReferencedContainer = "container:PureMVC Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F364DA1962B43700846576"
-               BuildableName = "PureMVC SwiftTests.xctest"
-               BlueprintName = "PureMVC SwiftTests"
+               BuildableName = "PureMVCSwiftTests.xctest"
+               BlueprintName = "PureMVCSwiftTests"
                ReferencedContainer = "container:PureMVC Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -49,6 +49,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D4F364CF1962B43600846576"
+            BuildableName = "PureMVCSwift.framework"
+            BlueprintName = "PureMVCSwift"
+            ReferencedContainer = "container:PureMVC Swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

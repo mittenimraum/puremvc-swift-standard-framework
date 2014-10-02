@@ -66,7 +66,7 @@
     *
     * @param notification the <code>INotification</code> to be handled
     */
-    func handleNotification ( notification: INotification )
+    optional func handleNotification ( notification: INotification ) -> Void
     
     /**
     * List <code>INotification</code> interests.

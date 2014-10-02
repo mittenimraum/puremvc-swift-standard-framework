@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F364EF1962B46800846576"
-               BuildableName = "PureMVC SwiftDemo.app"
-               BlueprintName = "PureMVC SwiftDemo"
+               BuildableName = "PureMVCSwiftDemo.app"
+               BlueprintName = "PureMVCSwiftDemo"
                ReferencedContainer = "container:PureMVC Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F364EF1962B46800846576"
-            BuildableName = "PureMVC SwiftDemo.app"
-            BlueprintName = "PureMVC SwiftDemo"
+            BuildableName = "PureMVCSwiftDemo.app"
+            BlueprintName = "PureMVCSwiftDemo"
             ReferencedContainer = "container:PureMVC Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F364EF1962B46800846576"
-            BuildableName = "PureMVC SwiftDemo.app"
-            BlueprintName = "PureMVC SwiftDemo"
+            BuildableName = "PureMVCSwiftDemo.app"
+            BlueprintName = "PureMVCSwiftDemo"
             ReferencedContainer = "container:PureMVC Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F364EF1962B46800846576"
-            BuildableName = "PureMVC SwiftDemo.app"
-            BlueprintName = "PureMVC SwiftDemo"
+            BuildableName = "PureMVCSwiftDemo.app"
+            BlueprintName = "PureMVCSwiftDemo"
             ReferencedContainer = "container:PureMVC Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D4F364D61962B43600846576 /* PureMVC Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F364D51962B43600846576 /* PureMVC Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4F364DC1962B43700846576 /* PureMVC Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F364D01962B43600846576 /* PureMVC Swift.framework */; };
+		D4F364DC1962B43700846576 /* PureMVCSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F364D01962B43600846576 /* PureMVCSwift.framework */; };
 		D4F364E31962B43700846576 /* PureMVC_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F364E21962B43700846576 /* PureMVC_SwiftTests.swift */; };
 		D4F364F51962B46800846576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F364F41962B46800846576 /* AppDelegate.swift */; };
 		D4F364F71962B46800846576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F364F61962B46800846576 /* ViewController.swift */; };
 		D4F364FA1962B46800846576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F364F81962B46800846576 /* Main.storyboard */; };
 		D4F364FC1962B46800846576 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F364FB1962B46800846576 /* Images.xcassets */; };
-		D4F3651B1962B54B00846576 /* PureMVC Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F364D01962B43600846576 /* PureMVC Swift.framework */; };
+		D4F3651B1962B54B00846576 /* PureMVCSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F364D01962B43600846576 /* PureMVCSwift.framework */; };
 		D4F3651D1962B5AB00846576 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3651C1962B5AB00846576 /* Controller.swift */; };
 		D4F3651F1962B5B300846576 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3651E1962B5B300846576 /* Model.swift */; };
 		D4F365211962B5BB00846576 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F365201962B5BB00846576 /* View.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D4F364D01962B43600846576 /* PureMVC Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "PureMVC Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F364D01962B43600846576 /* PureMVCSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureMVCSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F364D41962B43600846576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F364D51962B43600846576 /* PureMVC Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PureMVC Swift.h"; sourceTree = "<group>"; };
 		D4F364DB1962B43700846576 /* PureMVC SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PureMVC SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F364DC1962B43700846576 /* PureMVC Swift.framework in Frameworks */,
+				D4F364DC1962B43700846576 /* PureMVCSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F3651B1962B54B00846576 /* PureMVC Swift.framework in Frameworks */,
+				D4F3651B1962B54B00846576 /* PureMVCSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 		D4F364D11962B43600846576 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4F364D01962B43600846576 /* PureMVC Swift.framework */,
+				D4F364D01962B43600846576 /* PureMVCSwift.framework */,
 				D4F364DB1962B43700846576 /* PureMVC SwiftTests.xctest */,
 				D4F364F01962B46800846576 /* PureMVC SwiftDemo.app */,
 			);
@@ -287,9 +287,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D4F364CF1962B43600846576 /* PureMVC Swift */ = {
+		D4F364CF1962B43600846576 /* PureMVCSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F364E61962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVC Swift" */;
+			buildConfigurationList = D4F364E61962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVCSwift" */;
 			buildPhases = (
 				D4F364CB1962B43600846576 /* Sources */,
 				D4F364CC1962B43600846576 /* Frameworks */,
@@ -300,14 +300,14 @@
 			);
 			dependencies = (
 			);
-			name = "PureMVC Swift";
+			name = PureMVCSwift;
 			productName = "PureMVC Swift";
-			productReference = D4F364D01962B43600846576 /* PureMVC Swift.framework */;
+			productReference = D4F364D01962B43600846576 /* PureMVCSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4F364DA1962B43700846576 /* PureMVC SwiftTests */ = {
+		D4F364DA1962B43700846576 /* PureMVCSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F364E91962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVC SwiftTests" */;
+			buildConfigurationList = D4F364E91962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVCSwiftTests" */;
 			buildPhases = (
 				D4F364D71962B43700846576 /* Sources */,
 				D4F364D81962B43700846576 /* Frameworks */,
@@ -318,14 +318,14 @@
 			dependencies = (
 				D4F364DE1962B43700846576 /* PBXTargetDependency */,
 			);
-			name = "PureMVC SwiftTests";
+			name = PureMVCSwiftTests;
 			productName = "PureMVC SwiftTests";
 			productReference = D4F364DB1962B43700846576 /* PureMVC SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D4F364EF1962B46800846576 /* PureMVC SwiftDemo */ = {
+		D4F364EF1962B46800846576 /* PureMVCSwiftDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F365091962B46800846576 /* Build configuration list for PBXNativeTarget "PureMVC SwiftDemo" */;
+			buildConfigurationList = D4F365091962B46800846576 /* Build configuration list for PBXNativeTarget "PureMVCSwiftDemo" */;
 			buildPhases = (
 				D4F364EC1962B46800846576 /* Sources */,
 				D4F364ED1962B46800846576 /* Frameworks */,
@@ -335,7 +335,7 @@
 			);
 			dependencies = (
 			);
-			name = "PureMVC SwiftDemo";
+			name = PureMVCSwiftDemo;
 			productName = "PureMVC SwiftDemo";
 			productReference = D4F364F01962B46800846576 /* PureMVC SwiftDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -374,9 +374,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4F364CF1962B43600846576 /* PureMVC Swift */,
-				D4F364DA1962B43700846576 /* PureMVC SwiftTests */,
-				D4F364EF1962B46800846576 /* PureMVC SwiftDemo */,
+				D4F364CF1962B43600846576 /* PureMVCSwift */,
+				D4F364DA1962B43700846576 /* PureMVCSwiftTests */,
+				D4F364EF1962B46800846576 /* PureMVCSwiftDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -458,7 +458,7 @@
 /* Begin PBXTargetDependency section */
 		D4F364DE1962B43700846576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4F364CF1962B43600846576 /* PureMVC Swift */;
+			target = D4F364CF1962B43600846576 /* PureMVCSwift */;
 			targetProxy = D4F364DD1962B43700846576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -665,29 +665,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F364E61962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVC Swift" */ = {
+		D4F364E61962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVCSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F364E71962B43700846576 /* Debug */,
 				D4F364E81962B43700846576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D4F364E91962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVC SwiftTests" */ = {
+		D4F364E91962B43700846576 /* Build configuration list for PBXNativeTarget "PureMVCSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F364EA1962B43700846576 /* Debug */,
 				D4F364EB1962B43700846576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D4F365091962B46800846576 /* Build configuration list for PBXNativeTarget "PureMVC SwiftDemo" */ = {
+		D4F365091962B46800846576 /* Build configuration list for PBXNativeTarget "PureMVCSwiftDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3650A1962B46800846576 /* Debug */,
 				D4F3650B1962B46800846576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

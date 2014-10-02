@@ -35,10 +35,10 @@ class MacroCommand : Notifier, ICommand
     * If your subclass does define a constructor, be
     * sure to call <code>super.init()</code>.</P>
     */
-    init ()
+    override init ()
     {
         
-        super.init()
+        super.init();
         
         self.subCommands = Array<String>()
         

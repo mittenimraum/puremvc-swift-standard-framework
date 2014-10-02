@@ -115,11 +115,11 @@ class View : IView
     func notifiyObservers( notification: INotification )
     {
         
-        var observers : Array<IObserver> = self.observerMap[ notification.name! ]!;
+        var observers : Array<IObserver>? = self.observerMap[ notification.name! ]!;
         
         if ( observers != nil )
         {
-            for observer in observers
+            for observer in observers!
             {
                 observer.notifyObserver( notification );
             }
@@ -149,6 +149,7 @@ class View : IView
             return;
         }
         
+     
         self.mediatorMap[ mediator.name! ] = mediator;
         
         var interests : Array<String> = mediator.listNotificationInterests();
@@ -156,15 +157,17 @@ class View : IView
         if ( interests.count > 0 )
         {
             
-            var observer : IObserver = Observer.withNotifyMethod( mediator.handleNotification , notifyContext: mediator.context() )
-            
+            var observer : IObserver = Observer.withNotifyMethod( mediator.handleNotification! , notifyContext: mediator.context() )
+           
             for notificationName in interests
             {
                 self.registerObserver( notificationName , observer: observer )
             }
+
         }
         
         mediator.onRegister()
+
     }
     
     /**
@@ -177,18 +180,18 @@ class View : IView
     func registerObserver( notificationName: String , observer: IObserver )
     {
         
-        var observers : Array<IObserver> = self.observerMap[ notificationName ]!;
+        var observers : Array<IObserver>? = self.observerMap[ notificationName ]!
         
         if ( observers == nil )
         {
             
-            observers = [];
+            observers = []
             
-            self.observerMap[ notificationName ] = observers;
+            self.observerMap[ notificationName ] = observers
             
         }
         
-        observers.append( observer );
+        observers!.append( observer )
         
     }
     
@@ -201,22 +204,22 @@ class View : IView
     func removeMediator( mediatorName: String ) -> IMediator
     {
         
-        var mediator : IMediator = self.mediatorMap[ mediatorName ]!;
+        var mediator : IMediator? = self.mediatorMap[ mediatorName ]!
         
         if ( mediator != nil )
         {
             
-            var interests : Array<String> = mediator.listNotificationInterests();
+            var interests : Array<String> = mediator!.listNotificationInterests()
             
             for notificationName in interests
             {
-                self.removeObserver( notificationName , notifyContext: mediator );
+                self.removeObserver( notificationName , notifyContext: mediator! )
             }
-            mediator.onRemove()
+            mediator!.onRemove()
             mediatorMap.removeValueForKey( mediatorName )
         }
         
-        return mediator
+        return mediator!
         
     }
     
@@ -229,20 +232,20 @@ class View : IView
     func removeObserver( notificationName: String , notifyContext: AnyObject )
     {
 
-        var observers : Array<IObserver> = self.observerMap[ notificationName ]!
+        var observers : Array<IObserver>? = self.observerMap[ notificationName ]!
         
         if ( observers != nil )
         {
             
-            for var i : Int = 0; i < observers.count; ++i
+            for var i : Int = 0; i < observers!.count; ++i
             {
                 
-                var observer : IObserver = observers[ i ]
+                var observer : IObserver = observers![ i ]
                 
                 if ( observer.compareNotifyContext( notifyContext ))
                 {
                     
-                    observers.removeAtIndex( i )
+                    observers!.removeAtIndex( i )
                     
                     break
                     
@@ -251,7 +254,7 @@ class View : IView
             
         }
         
-        if ( observers.count == 0 )
+        if ( observers!.count == 0 )
         {
             self.observerMap.removeValueForKey( notificationName )
         }

@@ -37,7 +37,7 @@ class Notifier : NSObject
     
     var facade : IFacade
     
-    init ()
+    override init ()
     {
         self.facade = Facade.getInstance
     }
