@@ -8,7 +8,7 @@ PureMVC is a lightweight framework for creating applications based upon the clas
 * [Overview Presentation](http://puremvc.tv/#P100)
 
 ## Demos
-* [Record Store](https://github.com/mittenimraum/puremvc-swift-standard-framework/tree/master/PureMVCSwift%20Demo)
+* [Record Case](https://github.com/mittenimraum/puremvc-swift-standard-framework/tree/master/PureMVCSwift%20Demo)
 
 ## Status
 Beta
@@ -18,7 +18,7 @@ Beta
 
 ## License
 * PureMVC Standard Framework for Swift (Ported) - Copyright © 2014 Stephan Schulz
-* PureMVC - Copyright © 2006-2012 Futurescale, Inc.
+* PureMVC - Copyright © 2006-2014 Futurescale, Inc.
 * All rights reserved.
 
 * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
