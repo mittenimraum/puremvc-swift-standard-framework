@@ -17,7 +17,7 @@ Beta
 * [Swift](http://en.wikipedia.org/wiki/Swift_(programming_language))
 
 ## License
-* PureMVC Standard Framework for ObjectiveC (Ported) - Copyright © 2014 Stephan Schulz
+* PureMVC Standard Framework for Swift (Ported) - Copyright © 2014 Stephan Schulz
 * PureMVC - Copyright © 2006-2012 Futurescale, Inc.
 * All rights reserved.
 
