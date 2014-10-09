@@ -1,0 +1,10 @@
+PODS:
+  - ActionSheetPicker-3.0 (1.1.18)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 1.1.18)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: feb7d7809f91ec3a4de13cb97c639a617c8b2871
+
+COCOAPODS: 0.34.1

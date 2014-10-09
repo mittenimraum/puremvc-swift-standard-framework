@@ -1,19 +1,20 @@
+<p align="center">
+  <img src="http://upload.wikimedia.org/wikipedia/en/4/43/Apple_Swift_Logo.png">
+</p>
+
 ## [PureMVC](http://puremvc.github.com/) Swift Standard Framework
 PureMVC is a lightweight framework for creating applications based upon the classic [Model-View-Controller](http://en.wikipedia.org/wiki/Model-view-controller) design meta-pattern. This is a Swift port of the [AS3 reference implementation of the Standard Version](https://github.com/PureMVC/puremvc-as3-standard-framework/wiki). 
 
-* API Docs coming...
-* Unit Tests coming...
-* Discussion coming...
 * [Overview Presentation](http://puremvc.tv/#P100)
 
 ## Demos
-* Record Store coming...
+* [Record Store](https://github.com/mittenimraum/puremvc-swift-standard-framework/tree/master/PureMVCSwift%20Demo)
 
 ## Status
-Draft
+Beta
 
 ## Platforms / Technologies
-* [Swift](http://en.wikipedia.org/wiki/Swift_(programming_language))
+* [Swift](http://en.wikipedia.org/wiki/Swift_(programming_language)
 
 ## License
 * PureMVC Standard Framework for ObjectiveC (Ported) - Copyright © 2014 Stephan Schulz
