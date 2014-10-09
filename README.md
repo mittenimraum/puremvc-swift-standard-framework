@@ -14,7 +14,7 @@ PureMVC is a lightweight framework for creating applications based upon the clas
 Beta
 
 ## Platforms / Technologies
-* [Swift](http://en.wikipedia.org/wiki/Swift_(programming_language)
+* [Swift](http://en.wikipedia.org/wiki/Swift_(programming_language))
 
 ## License
 * PureMVC Standard Framework for ObjectiveC (Ported) - Copyright © 2014 Stephan Schulz
