@@ -1,8 +1,23 @@
 {
     "records" :
     [
-        { "interpret" : "Jimi Hendrix" , "album" : "Electric Ladyland" , "year" : "1968" , "genres" : "Psychedelic Rock, Classic" },
-        { "interpret" : "Radio Moscow" , "album" : "The Great Magnafuzz" , "year" : "2013" , "genres" : "Psychedelic Rock, Hard Rock" },
+        { "interpret" : "The Jimi Hendrix Experience" , "album" : "Electric Ladyland" , "year" : "1968" , "genres" : "Psychedelic Rock, Classic" },
+        { "interpret" : "Radio Moscow" , "album" : "The Great Escape Of Leslie Magnafuzz" , "year" : "2013" , "genres" : "Psychedelic Rock, Hard Rock" },
+        { "interpret" : "Kikagaku Mojo" , "album" : "Forest Of Lost Children" , "year" : "2014" , "genres" : "Psychedelic Rock" },
+        { "interpret" : "Lorelle Meets The Obsolete" , "album" : "Chambers" , "year" : "2014" , "genres" : "Psychedelic Rock, Garage, Dream Pop" },
+        { "interpret" : "Brace Choir" , "album" : "Turning On Your Double" , "year" : "2014" , "genres" : "Psychedelic Rock, Spacerock, Shoegaze" },
+        { "interpret" : "Night Beats" , "album" : "Night Beats" , "year" : "2012" , "genres" : "Garage, Psychedelic Rock" },
+        { "interpret" : "Suns Of Thyme" , "album" : "Fortune, Shelter, Love And Cure" , "year" : "2013" , "genres" : "Psychedelic Rock" },
+        { "interpret" : "Golden Animals" , "album" : "Hear Eye Go" , "year" : "2013" , "genres" : "Psychedelic Rock, Folk" },
+        { "interpret" : "Dead Skeletons" , "album" : "ORD" , "year" : "2013" , "genres" : "Psychedelic Rock, Neo Psychedelia, Art Rock" },
+        { "interpret" : "The Black Keys" , "album" : "Brothers" , "year" : "2010" , "genres" : "Blues Rock" },
+        { "interpret" : "Shapes Have Fangs" , "album" : "Dinner In The Dark" , "year" : "2011" , "genres" : "Garage, Psychedelic" },
+        { "interpret" : "Mondo Drag" , "album" : "New Rituals" , "year" : "2010" , "genres" : "Psychedelic Rock, Stoner Rock, Blues Rock" },
+        { "interpret" : "Kadavar" , "album" : "Kadavar" , "year" : "2012" , "genres" : "Psychedelic Rock, Stoner Rock, Death Metal, Hard Rock" },
+        { "interpret" : "Band Of Skulls" , "album" : "Baby Darling Doll Face Honey" , "year" : "2009" , "genres" : "Rock, Indie, Alternative, British, Blues" },
+        { "interpret" : "The UFO Club" , "album" : "The UFO Club" , "year" : "2012" , "genres" : "Neo Psychedelia, Indie Rock" },
+        { "interpret" : "No Joy" , "album" : "Negaverse" , "year" : "2012" , "genres" : "Shoegaze, Noise Pop, Lo-Fi" },
+        { "interpret" : "Dead Meadow" , "album" : "Old Growth" , "year" : "2008" , "genres" : "Stoner Rock, Psychedelic Rock, Indie Rock" }
     ],
     "genres" :
     [

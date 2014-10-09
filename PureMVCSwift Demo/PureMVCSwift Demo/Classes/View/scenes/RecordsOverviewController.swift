@@ -111,16 +111,14 @@ class RecordsOverviewController : UITableViewController
         if segue.identifier == SEGUE_OVERVIEW_DETAIL
         {
             
-            let vc = ( segue.destinationViewController as UINavigationController ).topViewController as RecordsDetailController
+            detailViewController = ( segue.destinationViewController as UINavigationController ).topViewController as? RecordsDetailController
             
-            OverviewDetailSegueViewController( vc )
-            
-            self.detailViewController = vc
+            showDetailViewController( detailViewController! )
             
         }
     }
     
-    func OverviewDetailSegueViewController( vc: RecordsDetailController )
+    func showDetailViewController( vc: RecordsDetailController )
     {
         
         if let indexPath = self.tableView.indexPathForSelectedRow()
@@ -174,7 +172,7 @@ class RecordsOverviewController : UITableViewController
     {
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad
         {
-            OverviewDetailSegueViewController( self.detailViewController! )
+            showDetailViewController( self.detailViewController! )
         }
         else
         {

@@ -58,7 +58,10 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         
         super.viewDidAppear( animated )
         
-        txtInterpret?.becomeFirstResponder()
+        if ( txtInterpret!.text.isEmpty )
+        {
+            txtInterpret?.becomeFirstResponder()
+        }
         
     }
     
