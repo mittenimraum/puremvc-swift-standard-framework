@@ -85,12 +85,6 @@ class RecordsOverviewController : UITableViewController
         
     }
     
-    override func viewDidLayoutSubviews()
-    {
-        
-        
-    }
-    
     override func viewWillAppear( animated: Bool )
     {
         
@@ -102,7 +96,7 @@ class RecordsOverviewController : UITableViewController
             self.performSegueWithIdentifier( SEGUE_OVERVIEW_DETAIL , sender: self )
         }
     }
-
+    
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -156,7 +150,7 @@ class RecordsOverviewController : UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath)  as UITableViewCell
         let record = records?[ indexPath.row ]
 
-        cell.textLabel?.text = record?.interpret
+        cell.textLabel.text = record?.interpret
         
         return cell
         

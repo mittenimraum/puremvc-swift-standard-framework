@@ -53,8 +53,8 @@ class RecordProxy : Proxy
         
         let bundle = NSBundle.mainBundle()
         let path = bundle.pathForResource( "data" , ofType: "json" )
-        let data = NSData.dataWithContentsOfFile( path! , options: NSDataReadingOptions.DataReadingUncached , error: &error )
-        let json = JSON( data: data )
+        let data = NSData( contentsOfFile: path! , options: NSDataReadingOptions.DataReadingUncached , error: &error )
+        let json = JSON( data: data! )
 
         var records : Array<RecordVO> = []
      
