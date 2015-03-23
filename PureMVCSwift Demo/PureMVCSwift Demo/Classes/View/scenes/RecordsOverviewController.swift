@@ -150,7 +150,7 @@ class RecordsOverviewController : UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath)  as UITableViewCell
         let record = records?[ indexPath.row ]
 
-        cell.textLabel.text = record?.interpret
+        cell.textLabel?.text = record?.interpret
         
         return cell
         

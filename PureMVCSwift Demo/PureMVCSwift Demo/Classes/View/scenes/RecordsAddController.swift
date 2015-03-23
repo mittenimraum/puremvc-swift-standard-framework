@@ -336,7 +336,7 @@ class RecordsAddGenreController : UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier( kGenreCell , forIndexPath: indexPath ) as UITableViewCell
         let genre = delegate!.genres[ indexPath.row ]
         
-        cell.textLabel.text = genre
+        cell.textLabel?.text = genre
         cell.accessoryType = delegate!.genresSelected.contains( genre ) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
 
         return cell
