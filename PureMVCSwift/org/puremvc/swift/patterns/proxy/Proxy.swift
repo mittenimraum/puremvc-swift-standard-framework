@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Proxy : IProxy
+class Proxy : NSObject, IProxy
 {
     
     /**
@@ -48,12 +48,20 @@ class Proxy : IProxy
     
     init( proxyName: String? )
     {
+        
+        super.init()
+        
         initialize( proxyName , data: nil )
+        
     }
     
     init( proxyName: String? , data: AnyObject? )
     {
+        
+        super.init()
+        
         initialize( proxyName , data: data )
+        
     }
     
     func initialize ( proxyName: String? , data: AnyObject? )

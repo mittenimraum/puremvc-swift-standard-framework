@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE8252C3C54297ABB69B101A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5833545B54AD046E982328 /* libPods.a */; };
+		228975E55732F03D2E144B6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CF25CEFB29CCEF7395A3BE /* libPods.a */; };
 		D40BF1A219E6921C00FDB633 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF19F19E6921C00FDB633 /* StringExtension.swift */; };
-		D40BF1A319E6921C00FDB633 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A019E6921C00FDB633 /* SwiftyJSON.swift */; };
 		D40BF1A419E6921C00FDB633 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */; };
 		D40BF1A619E6922C00FDB633 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */; };
 		D40BF1AB19E69D2C00FDB633 /* RecordsAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A819E69D2C00FDB633 /* RecordsAddController.swift */; };
@@ -17,6 +16,7 @@
 		D40BF1AD19E69D2C00FDB633 /* RecordsOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1AA19E69D2C00FDB633 /* RecordsOverviewController.swift */; };
 		D45B8A1D19DE96FB002CF664 /* StartupCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45B8A1C19DE96FB002CF664 /* StartupCommand.swift */; };
 		D47F666619E3F42800DB4C3A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F666519E3F42800DB4C3A /* Util.swift */; };
+		D48A859B1AD7C51500477B16 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */; };
 		D4950B1719E280A700AE4D54 /* RecordVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1619E280A700AE4D54 /* RecordVO.swift */; };
 		D4950B1919E280AF00AE4D54 /* RecordProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1819E280AF00AE4D54 /* RecordProxy.swift */; };
 		D4950B1B19E280BF00AE4D54 /* ApplicationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1A19E280BF00AE4D54 /* ApplicationMediator.swift */; };
@@ -51,10 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A5833545B54AD046E982328 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CF25CEFB29CCEF7395A3BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C72CCE349394302ABE3603 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D40BF19F19E6921C00FDB633 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		D40BF1A019E6921C00FDB633 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		D40BF1A819E69D2C00FDB633 /* RecordsAddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsAddController.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		D43AECE719E3219E00DADC22 /* Objective-C-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C-Bridge.h"; sourceTree = "<group>"; };
 		D45B8A1C19DE96FB002CF664 /* StartupCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupCommand.swift; sourceTree = "<group>"; };
 		D47F666519E3F42800DB4C3A /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D4950B1619E280A700AE4D54 /* RecordVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVO.swift; sourceTree = "<group>"; };
 		D4950B1819E280AF00AE4D54 /* RecordProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordProxy.swift; sourceTree = "<group>"; };
 		D4950B1A19E280BF00AE4D54 /* ApplicationMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationMediator.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8252C3C54297ABB69B101A /* libPods.a in Frameworks */,
+				228975E55732F03D2E144B6D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 		17B60CAC95927536BC8C2B6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A5833545B54AD046E982328 /* libPods.a */,
+				15CF25CEFB29CCEF7395A3BE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 		D40BF19E19E6921C00FDB633 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D40BF1A019E6921C00FDB633 /* SwiftyJSON.swift */,
 				D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */,
 				D40BF19F19E6921C00FDB633 /* StringExtension.swift */,
+				D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */,
 				D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -501,6 +501,7 @@
 				D4D4155319DDB053001D920F /* ApplicationFacade.swift in Sources */,
 				D4D4157E19DDB06A001D920F /* INotifier.swift in Sources */,
 				D4950B5919E2B11600AE4D54 /* OverviewMediator.swift in Sources */,
+				D48A859B1AD7C51500477B16 /* SwiftyJSON.swift in Sources */,
 				D4950B1B19E280BF00AE4D54 /* ApplicationMediator.swift in Sources */,
 				D4D4157519DDB06A001D920F /* Controller.swift in Sources */,
 				D4D4158119DDB06A001D920F /* IView.swift in Sources */,
@@ -521,7 +522,6 @@
 				D4D4158019DDB06A001D920F /* IProxy.swift in Sources */,
 				D4D4157F19DDB06A001D920F /* IObserver.swift in Sources */,
 				D4950B1719E280A700AE4D54 /* RecordVO.swift in Sources */,
-				D40BF1A319E6921C00FDB633 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

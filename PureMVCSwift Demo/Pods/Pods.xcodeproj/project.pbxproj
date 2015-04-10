@@ -1,1380 +1,495 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0527234B8F539330AAA7342F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFFD642C29EF41B38221E712</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>085811B7A800C60C82EBB9E1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ActionSheetPicker-3.0.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D083161613A96CDF4BCC299</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E420AE25AFD97F545D85E4A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0D59D9B958F23F227CAD36D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F89B6317F392D9A2F1630B9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>129AB8C8DDFA8D85CF44B949</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CC99B449AF77692C61BF90C5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-ActionSheetPicker-3.0/Pods-ActionSheetPicker-3.0-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>19321887431AF59A99308179</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-ActionSheetPicker-3.0-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>239CA64F7EEB9DE162FCF321</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>97DE0C53ADE73439383D6F75</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>26CDEE1D34DEE594CCAB1F6E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AbstractActionSheetPicker.h</string>
-			<key>path</key>
-			<string>Pickers/AbstractActionSheetPicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28A1B67EFD3E32B8487C4F2D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B8C3D5252CC5AEE11E614430</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2A7B30E49552150CBCE28D47</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FADACF9A80CA16F65B4F89F0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2F73F88F0062A9C85CF7E6F6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B76015A963D9DB09CBB95F4C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F5CA6BD3C44A5ED9089DED12</string>
-				<string>B3EBF3AC21FACA69FA847B31</string>
-				<string>FF0017C39B4406D2CD9FEC5D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-ActionSheetPicker-3.0</string>
-			<key>productName</key>
-			<string>Pods-ActionSheetPicker-3.0</string>
-			<key>productReference</key>
-			<string>A517D30B1A53ABA7D4F82833</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>32C8DED4A3C2494A552A50D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9A29476B34C425D787635D9A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>330BE569F16243C3D1FF53C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetCustomPicker.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetCustomPicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3970125EFC83C11E938132CF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>19321887431AF59A99308179</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3AB46B467472CC23165DED84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ActionSheetDatePicker.m</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetDatePicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DA168B9E1F71B0BF48F6CC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ActionSheetStringPicker.m</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetStringPicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F89B6317F392D9A2F1630B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ActionSheetDistancePicker.m</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetDistancePicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41358D5E26FF7A8460BF4CEE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SWActionSheet.m</string>
-			<key>path</key>
-			<string>Pickers/SWActionSheet.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42A30F9C8C9C657C22149446</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6C2E0440D10396A75819B796</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45118906788405FB808FC586</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45A1F64C561F3D3249888535</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BEC9F76371BF5E542D810329</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>2F73F88F0062A9C85CF7E6F6</string>
-			<key>remoteInfo</key>
-			<string>Pods-ActionSheetPicker-3.0</string>
-		</dict>
-		<key>52CD8E8E5857E1D1A4D6504F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AbstractActionSheetPicker.m</string>
-			<key>path</key>
-			<string>Pickers/AbstractActionSheetPicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5448F3E86D287A5C41DC4125</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC7323B9BBC48E99C484F6A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54C7B2B4609D268C94EE7124</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58852F6C38AC5CE9BC2359F5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9B150A8E4AFF79F5ABF21BF4</string>
-			<key>buildPhases</key>
-			<array>
-				<string>239CA64F7EEB9DE162FCF321</string>
-				<string>32C8DED4A3C2494A552A50D8</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>75142AC20252085C7D1505B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>7F5448DF3E9E0B9FC283A24F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>58E0651AD6FD75E33BC9F042</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B63AC1251840FE1A86FC901</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B70695B024F652367898D27</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>085811B7A800C60C82EBB9E1</string>
-				<string>CC99B449AF77692C61BF90C5</string>
-				<string>19321887431AF59A99308179</string>
-				<string>F1D787F80913BD41A15A2F2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-ActionSheetPicker-3.0</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C3DABFBEC9B9D61B76AD092</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>5FCDAE5CA4CB18D9D9C6712E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AD002629C219DB8D2717A12E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6081EE412ADFAEB6EC16652B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SWActionSheet.h</string>
-			<key>path</key>
-			<string>Pickers/SWActionSheet.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6AEE39FC3AAA77B881827C2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9102676E8183702B4E069DBB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6C2E0440D10396A75819B796</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>70AA6D04746E8E23968FCDA5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF647F6CB56D68B61759F677</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>70C97723A63F4F4280F8B677</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41358D5E26FF7A8460BF4CEE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>71BE4529B458293F430D89D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetCustomPickerDelegate.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetCustomPickerDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72083513875EE329CDE8025F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB44CB3AE29FCDAE521DBB58</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>74BA479254172E1AC6FFA913</key>
-		<dict>
-			<key>fileRef</key>
-			<string>71BE4529B458293F430D89D0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>75142AC20252085C7D1505B0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>2F73F88F0062A9C85CF7E6F6</string>
-			<key>targetProxy</key>
-			<string>45A1F64C561F3D3249888535</string>
-		</dict>
-		<key>7A8F0E56C480003974501540</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F103FBB9BC9ED8241614F665</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>7F5448DF3E9E0B9FC283A24F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>84611EC478287DAB7C26BCF4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED42A923E4E572B547DF8A0E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>86625E4E2C59BA4C4995402D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5B63AC1251840FE1A86FC901</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>86B0BDE961FEEA21AE3E7CAE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3AB46B467472CC23165DED84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>9102676E8183702B4E069DBB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DistancePickerView.h</string>
-			<key>path</key>
-			<string>Pickers/DistancePickerView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97DE0C53ADE73439383D6F75</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EB8B19954BD0806B79E3D496</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A29476B34C425D787635D9A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6C2E0440D10396A75819B796</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9B150A8E4AFF79F5ABF21BF4</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>28A1B67EFD3E32B8487C4F2D</string>
-				<string>86625E4E2C59BA4C4995402D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9DA3DB6BEC442FA7F8CE7611</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ActionSheetLocalePicker.m</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetLocalePicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A24A4E086F2750FB512065F3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A517D30B1A53ABA7D4F82833</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-ActionSheetPicker-3.0.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AD002629C219DB8D2717A12E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6C2E0440D10396A75819B796</string>
-				<string>E420AE25AFD97F545D85E4A9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1C455813F6F8A1DE44DFC29</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9DA3DB6BEC442FA7F8CE7611</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B3EBF3AC21FACA69FA847B31</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>42A30F9C8C9C657C22149446</string>
-				<string>0D083161613A96CDF4BCC299</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D4011E1E550D84AD2A7C5B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52CD8E8E5857E1D1A4D6504F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B76015A963D9DB09CBB95F4C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E56CD9E81219722198CF607F</string>
-				<string>129AB8C8DDFA8D85CF44B949</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B8C3D5252CC5AEE11E614430</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA23EA11425B200CD9A5E86E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5C3DABFBEC9B9D61B76AD092</string>
-				<string>5FCDAE5CA4CB18D9D9C6712E</string>
-				<string>5448F3E86D287A5C41DC4125</string>
-				<string>EF2F445E2179C75EB0BA147C</string>
-				<string>70AA6D04746E8E23968FCDA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEC9F76371BF5E542D810329</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C1AC7D47A025CFA4A3587CAB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BA23EA11425B200CD9A5E86E</string>
-			<key>productRefGroup</key>
-			<string>EF2F445E2179C75EB0BA147C</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>58852F6C38AC5CE9BC2359F5</string>
-				<string>2F73F88F0062A9C85CF7E6F6</string>
-			</array>
-		</dict>
-		<key>BF647F6CB56D68B61759F677</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6FA049ABD94A58E15865560</string>
-				<string>45118906788405FB808FC586</string>
-				<string>EB8B19954BD0806B79E3D496</string>
-				<string>58E0651AD6FD75E33BC9F042</string>
-				<string>54C7B2B4609D268C94EE7124</string>
-				<string>B8C3D5252CC5AEE11E614430</string>
-				<string>5B63AC1251840FE1A86FC901</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1AC7D47A025CFA4A3587CAB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A24A4E086F2750FB512065F3</string>
-				<string>FA5611428778BAD33A87CA46</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CB305984314BB7B056C03A5E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3DA168B9E1F71B0BF48F6CC6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CC7323B9BBC48E99C484F6A4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>26CDEE1D34DEE594CCAB1F6E</string>
-				<string>52CD8E8E5857E1D1A4D6504F</string>
-				<string>330BE569F16243C3D1FF53C7</string>
-				<string>F103FBB9BC9ED8241614F665</string>
-				<string>71BE4529B458293F430D89D0</string>
-				<string>ED42A923E4E572B547DF8A0E</string>
-				<string>3AB46B467472CC23165DED84</string>
-				<string>FADACF9A80CA16F65B4F89F0</string>
-				<string>3F89B6317F392D9A2F1630B9</string>
-				<string>DB44CB3AE29FCDAE521DBB58</string>
-				<string>9DA3DB6BEC442FA7F8CE7611</string>
-				<string>EFFD642C29EF41B38221E712</string>
-				<string>3DA168B9E1F71B0BF48F6CC6</string>
-				<string>9102676E8183702B4E069DBB</string>
-				<string>D54C1238713C5EEB8654A3E5</string>
-				<string>6081EE412ADFAEB6EC16652B</string>
-				<string>41358D5E26FF7A8460BF4CEE</string>
-				<string>5B70695B024F652367898D27</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ActionSheetPicker-3.0</string>
-			<key>path</key>
-			<string>ActionSheetPicker-3.0</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC99B449AF77692C61BF90C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ActionSheetPicker-3.0-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D1A69151AF88CA468981DCC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>26CDEE1D34DEE594CCAB1F6E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D54C1238713C5EEB8654A3E5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DistancePickerView.m</string>
-			<key>path</key>
-			<string>Pickers/DistancePickerView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB44CB3AE29FCDAE521DBB58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetLocalePicker.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetLocalePicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E420AE25AFD97F545D85E4A9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>E56CD9E81219722198CF607F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CC99B449AF77692C61BF90C5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-ActionSheetPicker-3.0/Pods-ActionSheetPicker-3.0-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E6FA049ABD94A58E15865560</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB8B19954BD0806B79E3D496</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED42A923E4E572B547DF8A0E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetDatePicker.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetDatePicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF2F445E2179C75EB0BA147C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7F5448DF3E9E0B9FC283A24F</string>
-				<string>A517D30B1A53ABA7D4F82833</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFFD642C29EF41B38221E712</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetStringPicker.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetStringPicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F103FBB9BC9ED8241614F665</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ActionSheetCustomPicker.m</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetCustomPicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F1D787F80913BD41A15A2F2C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-ActionSheetPicker-3.0-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3FAA062FF3F878EFF7B9E88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>330BE569F16243C3D1FF53C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F5CA6BD3C44A5ED9089DED12</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B6D4011E1E550D84AD2A7C5B</string>
-				<string>7A8F0E56C480003974501540</string>
-				<string>86B0BDE961FEEA21AE3E7CAE</string>
-				<string>0D59D9B958F23F227CAD36D6</string>
-				<string>B1C455813F6F8A1DE44DFC29</string>
-				<string>CB305984314BB7B056C03A5E</string>
-				<string>F7AB2035DA514259CFD99CE0</string>
-				<string>3970125EFC83C11E938132CF</string>
-				<string>70C97723A63F4F4280F8B677</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F6902CFC7B38DE57D669AB9F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6081EE412ADFAEB6EC16652B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F7AB2035DA514259CFD99CE0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D54C1238713C5EEB8654A3E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>FA5611428778BAD33A87CA46</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FADACF9A80CA16F65B4F89F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ActionSheetDistancePicker.h</string>
-			<key>path</key>
-			<string>Pickers/ActionSheetDistancePicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF0017C39B4406D2CD9FEC5D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D1A69151AF88CA468981DCC9</string>
-				<string>F3FAA062FF3F878EFF7B9E88</string>
-				<string>74BA479254172E1AC6FFA913</string>
-				<string>84611EC478287DAB7C26BCF4</string>
-				<string>2A7B30E49552150CBCE28D47</string>
-				<string>72083513875EE329CDE8025F</string>
-				<string>0527234B8F539330AAA7342F</string>
-				<string>6AEE39FC3AAA77B881827C2A</string>
-				<string>F6902CFC7B38DE57D669AB9F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BEC9F76371BF5E542D810329</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C75B5CCD1CE74CD8A356B6 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EAB3A06710B2A66EB58667 /* AbstractActionSheetPicker.h */; };
+		07C5CD1606404AFBFA4E0D28 /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = FC708D4CFF46B181C336EC22 /* ActionSheetDatePicker.h */; };
+		23F57DA3B96800A71B4A52D0 /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C7AFC3B0F6C8622AE7B6EE /* ActionSheetCustomPicker.h */; };
+		33D8F3D7DABD879342646D12 /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECA4525BAC9A5D82B4C3331 /* SWActionSheet.h */; };
+		4211EFC08448939F72B27328 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F14BA3E3283C99E91FFA01 /* ActionSheetLocalePicker.h */; };
+		44F5C609A3865F3583EC2A30 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD4F5348B61C605441D15D2 /* Pods-dummy.m */; };
+		467DFEBC833C4F1A235A27FB /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F176D49BAFF7EF08D1EF15 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4831ED693CCBEB816F0917A5 /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 014CE9EB55B2D24433EEF170 /* ActionSheetStringPicker.h */; };
+		4E6FFAE8748296EA429FF642 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDB23BE32F9A35BFD4F9B96 /* ActionSheetDistancePicker.h */; };
+		593F12C251A72CE7F7F4C22B /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751D407FA469AC497F2EF68B /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		661DC66115B0EC748018226D /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F80D935D1DCC6BB94D95ED /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CAF844A2EE093BFEABB7535 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B914573BEFCD9BA57EBAEE3 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		999EFC32A3D30BCF0500A712 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F854B2B54AEA2FBC2510F2 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0C413846923DC06EC56CFBC /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F69F62E4F283369E292627 /* ActionSheetCustomPickerDelegate.h */; };
+		A32BA6D6F85EAB022AE06727 /* Pods-ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4AD5147934BF20FC42329 /* Pods-ActionSheetPicker-3.0-dummy.m */; };
+		B325B96CF5B793C2996281C4 /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D11945A0994DEDBC2A54CD /* DistancePickerView.h */; };
+		C238BC96FD43DF8D4FBA70A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349206804751949746643F58 /* Foundation.framework */; };
+		C2AF769F5206A82A73F8AED0 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F99FBD6D5E9E9F8F7515573A /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C70B95FB9E70E5BC09AAF7FE /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E1491F9F3AE47D97254C44C3 /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C841A42F3C5C9F0D254E2BEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349206804751949746643F58 /* Foundation.framework */; };
+		D278CBF78851132565CB1182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D1BD3CDB22E25052039A82 /* UIKit.framework */; };
+		D6AF80A17E592F08CBA863B4 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27F98E60E599588C703866 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11DA095122B18716D33262E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43875A12870B1E9523EB376F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E40373B4C8758A2E0C6593;
+			remoteInfo = "Pods-ActionSheetPicker-3.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014CE9EB55B2D24433EEF170 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		09AE472BBBD4167B715D678B /* Pods-ActionSheetPicker-3.0-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheetPicker-3.0-Private.xcconfig"; sourceTree = "<group>"; };
+		0C27F98E60E599588C703866 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		0ECA4525BAC9A5D82B4C3331 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+		1FDF6E94BD099A664609CF1A /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		349206804751949746643F58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B256A0983AE1AE0296C37D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		40D11945A0994DEDBC2A54CD /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		41F69F62E4F283369E292627 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		46F854B2B54AEA2FBC2510F2 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		53D1BD3CDB22E25052039A82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		585893C2240346D149B04A99 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		5A260CA9E7C443C67C16C0F8 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		6CDB23BE32F9A35BFD4F9B96 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		74AAC62DE90C41F057253531 /* Pods-ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		751D407FA469AC497F2EF68B /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
+		7B3CFBE68D4AABEEE0FD5D26 /* Pods-ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
+		7E41CFCC51104205356688A2 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8B914573BEFCD9BA57EBAEE3 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		A3CC47ADBB07AAD87C7FC68E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82AA69B01EDE24BD1303DBD /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9F80D935D1DCC6BB94D95ED /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		B0C7AFC3B0F6C8622AE7B6EE /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		B2EAB3A06710B2A66EB58667 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		C1F176D49BAFF7EF08D1EF15 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		C2B1400C79AAAEA21896899E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9B4AD5147934BF20FC42329 /* Pods-ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
+		E1491F9F3AE47D97254C44C3 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		EBD4F5348B61C605441D15D2 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F3F14BA3E3283C99E91FFA01 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		F986D9E9F26A7E121A28D9D1 /* libPods-ActionSheetPicker-3.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99FBD6D5E9E9F8F7515573A /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		FC708D4CFF46B181C336EC22 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F6AFCA7927D54F5C80F2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C841A42F3C5C9F0D254E2BEE /* Foundation.framework in Frameworks */,
+				D278CBF78851132565CB1182 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD534E9C5E622B43EFF6807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C238BC96FD43DF8D4FBA70A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2C7B7008AB082CDA31EB70 /* ActionSheetPicker-3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B2EAB3A06710B2A66EB58667 /* AbstractActionSheetPicker.h */,
+				F99FBD6D5E9E9F8F7515573A /* AbstractActionSheetPicker.m */,
+				B0C7AFC3B0F6C8622AE7B6EE /* ActionSheetCustomPicker.h */,
+				0C27F98E60E599588C703866 /* ActionSheetCustomPicker.m */,
+				41F69F62E4F283369E292627 /* ActionSheetCustomPickerDelegate.h */,
+				FC708D4CFF46B181C336EC22 /* ActionSheetDatePicker.h */,
+				46F854B2B54AEA2FBC2510F2 /* ActionSheetDatePicker.m */,
+				6CDB23BE32F9A35BFD4F9B96 /* ActionSheetDistancePicker.h */,
+				C1F176D49BAFF7EF08D1EF15 /* ActionSheetDistancePicker.m */,
+				F3F14BA3E3283C99E91FFA01 /* ActionSheetLocalePicker.h */,
+				E1491F9F3AE47D97254C44C3 /* ActionSheetLocalePicker.m */,
+				014CE9EB55B2D24433EEF170 /* ActionSheetStringPicker.h */,
+				8B914573BEFCD9BA57EBAEE3 /* ActionSheetStringPicker.m */,
+				40D11945A0994DEDBC2A54CD /* DistancePickerView.h */,
+				751D407FA469AC497F2EF68B /* DistancePickerView.m */,
+				0ECA4525BAC9A5D82B4C3331 /* SWActionSheet.h */,
+				A9F80D935D1DCC6BB94D95ED /* SWActionSheet.m */,
+				367F1DE12F373FE9DBB22B5E /* Support Files */,
+			);
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		367F1DE12F373FE9DBB22B5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CFBE68D4AABEEE0FD5D26 /* Pods-ActionSheetPicker-3.0.xcconfig */,
+				09AE472BBBD4167B715D678B /* Pods-ActionSheetPicker-3.0-Private.xcconfig */,
+				C9B4AD5147934BF20FC42329 /* Pods-ActionSheetPicker-3.0-dummy.m */,
+				74AAC62DE90C41F057253531 /* Pods-ActionSheetPicker-3.0-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		3E5CA245A0305028C36E9015 = {
+			isa = PBXGroup;
+			children = (
+				A82AA69B01EDE24BD1303DBD /* Podfile */,
+				E5F1EC39E9643F96856CBC73 /* Frameworks */,
+				44CBE871D9FF5D3A646199B4 /* Pods */,
+				B1066857543FEE2DF15F68E5 /* Products */,
+				A8B2141D1EB71C062C7994FB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		44CBE871D9FF5D3A646199B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B2C7B7008AB082CDA31EB70 /* ActionSheetPicker-3.0 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8B2141D1EB71C062C7994FB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C897F34593E4A68000488690 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1066857543FEE2DF15F68E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC47ADBB07AAD87C7FC68E /* libPods.a */,
+				F986D9E9F26A7E121A28D9D1 /* libPods-ActionSheetPicker-3.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD2FC1737B1FF44ADF7DEB9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				349206804751949746643F58 /* Foundation.framework */,
+				53D1BD3CDB22E25052039A82 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C897F34593E4A68000488690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2B1400C79AAAEA21896899E /* Pods-acknowledgements.markdown */,
+				1FDF6E94BD099A664609CF1A /* Pods-acknowledgements.plist */,
+				EBD4F5348B61C605441D15D2 /* Pods-dummy.m */,
+				5A260CA9E7C443C67C16C0F8 /* Pods-environment.h */,
+				7E41CFCC51104205356688A2 /* Pods-resources.sh */,
+				585893C2240346D149B04A99 /* Pods.debug.xcconfig */,
+				3B256A0983AE1AE0296C37D2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		E5F1EC39E9643F96856CBC73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD2FC1737B1FF44ADF7DEB9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5ABCDC77BBF2374A59B88A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C75B5CCD1CE74CD8A356B6 /* AbstractActionSheetPicker.h in Headers */,
+				23F57DA3B96800A71B4A52D0 /* ActionSheetCustomPicker.h in Headers */,
+				A0C413846923DC06EC56CFBC /* ActionSheetCustomPickerDelegate.h in Headers */,
+				07C5CD1606404AFBFA4E0D28 /* ActionSheetDatePicker.h in Headers */,
+				4E6FFAE8748296EA429FF642 /* ActionSheetDistancePicker.h in Headers */,
+				4211EFC08448939F72B27328 /* ActionSheetLocalePicker.h in Headers */,
+				4831ED693CCBEB816F0917A5 /* ActionSheetStringPicker.h in Headers */,
+				B325B96CF5B793C2996281C4 /* DistancePickerView.h in Headers */,
+				33D8F3D7DABD879342646D12 /* SWActionSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27E40373B4C8758A2E0C6593 /* Pods-ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917F78AED6781888BC8CD6C5 /* Build configuration list for PBXNativeTarget "Pods-ActionSheetPicker-3.0" */;
+			buildPhases = (
+				86320C89ECDBB692C3B53251 /* Sources */,
+				48F6AFCA7927D54F5C80F2AE /* Frameworks */,
+				B5ABCDC77BBF2374A59B88A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ActionSheetPicker-3.0";
+			productName = "Pods-ActionSheetPicker-3.0";
+			productReference = F986D9E9F26A7E121A28D9D1 /* libPods-ActionSheetPicker-3.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2AE54A83A9347B5A9C356EB3 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DB190D14366EEA8C253E0A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				32C935E92FCFE57940B36EFB /* Sources */,
+				8BD534E9C5E622B43EFF6807 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99D7895B401DADFB19FBCBBE /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = A3CC47ADBB07AAD87C7FC68E /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43875A12870B1E9523EB376F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 8DD7D0777ECC53A7B26701EB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E5CA245A0305028C36E9015;
+			productRefGroup = B1066857543FEE2DF15F68E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AE54A83A9347B5A9C356EB3 /* Pods */,
+				27E40373B4C8758A2E0C6593 /* Pods-ActionSheetPicker-3.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32C935E92FCFE57940B36EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F5C609A3865F3583EC2A30 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86320C89ECDBB692C3B53251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2AF769F5206A82A73F8AED0 /* AbstractActionSheetPicker.m in Sources */,
+				D6AF80A17E592F08CBA863B4 /* ActionSheetCustomPicker.m in Sources */,
+				999EFC32A3D30BCF0500A712 /* ActionSheetDatePicker.m in Sources */,
+				467DFEBC833C4F1A235A27FB /* ActionSheetDistancePicker.m in Sources */,
+				C70B95FB9E70E5BC09AAF7FE /* ActionSheetLocalePicker.m in Sources */,
+				7CAF844A2EE093BFEABB7535 /* ActionSheetStringPicker.m in Sources */,
+				593F12C251A72CE7F7F4C22B /* DistancePickerView.m in Sources */,
+				A32BA6D6F85EAB022AE06727 /* Pods-ActionSheetPicker-3.0-dummy.m in Sources */,
+				661DC66115B0EC748018226D /* SWActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99D7895B401DADFB19FBCBBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ActionSheetPicker-3.0";
+			target = 27E40373B4C8758A2E0C6593 /* Pods-ActionSheetPicker-3.0 */;
+			targetProxy = 11DA095122B18716D33262E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BD2283009B8751E4227F481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		360749CF74368977926ABE8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B256A0983AE1AE0296C37D2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		49A7026A41E0553CE85E8EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585893C2240346D149B04A99 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E9271835E664A055C01A149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D5ECF3E1E3B68F89801B52C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AE472BBBD4167B715D678B /* Pods-ActionSheetPicker-3.0-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ActionSheetPicker-3.0/Pods-ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F9D1B5FB4792E41FECAD6D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AE472BBBD4167B715D678B /* Pods-ActionSheetPicker-3.0-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ActionSheetPicker-3.0/Pods-ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DB190D14366EEA8C253E0A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A7026A41E0553CE85E8EE6 /* Debug */,
+				360749CF74368977926ABE8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DD7D0777ECC53A7B26701EB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9271835E664A055C01A149 /* Debug */,
+				2BD2283009B8751E4227F481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917F78AED6781888BC8CD6C5 /* Build configuration list for PBXNativeTarget "Pods-ActionSheetPicker-3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D1B5FB4792E41FECAD6D7C /* Debug */,
+				D5ECF3E1E3B68F89801B52C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43875A12870B1E9523EB376F /* Project object */;
+}

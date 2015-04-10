@@ -105,7 +105,7 @@ class RecordsOverviewController : UITableViewController
         if segue.identifier == SEGUE_OVERVIEW_DETAIL
         {
             
-            detailViewController = ( segue.destinationViewController as UINavigationController ).topViewController as? RecordsDetailController
+            detailViewController = ( segue.destinationViewController as! UINavigationController ).topViewController as? RecordsDetailController
             
             showDetailViewController( detailViewController! )
             
@@ -147,7 +147,7 @@ class RecordsOverviewController : UITableViewController
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath)  as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath) as! UITableViewCell
         let record = records?[ indexPath.row ]
 
         cell.textLabel?.text = record?.interpret

@@ -14,8 +14,8 @@ class StartupCommand : SimpleCommand
     override func execute(notification: INotification)
     {
         
-        let root = notification.body as UISplitViewController
-        let overview = root.viewControllers[ 0 ] as UINavigationController
+        let root = notification.body as! UISplitViewController
+        let overview = root.viewControllers[ 0 ] as! UINavigationController
         
         facade.registerProxy( RecordProxy( proxyName: RecordProxy.NAME()))
         

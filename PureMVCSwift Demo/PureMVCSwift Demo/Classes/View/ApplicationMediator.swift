@@ -21,17 +21,17 @@ class ApplicationMediator : Mediator, IMediator, UISplitViewControllerDelegate
     {
         get
         {
-            return self.viewComponent as UISplitViewController
+            return self.viewComponent as! UISplitViewController
         }
     }
     
     override func initializeMediator()
     {
         
-        let splitViewController = viewComponent as UISplitViewController
+        let splitViewController = viewComponent as! UISplitViewController
         splitViewController.delegate = self
         
-        let navigationController = splitViewController.viewControllers[ splitViewController.viewControllers.count - 1 ] as UINavigationController
+        let navigationController = splitViewController.viewControllers[ splitViewController.viewControllers.count - 1 ] as! UINavigationController
         navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         
     }

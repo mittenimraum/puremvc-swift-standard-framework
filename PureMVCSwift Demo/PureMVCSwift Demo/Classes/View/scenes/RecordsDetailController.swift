@@ -28,7 +28,7 @@ class RecordsDetailController : UIViewController
     func update()
     {
         // Update the user interface for the detail item.
-        if record? != nil
+        if ( record != nil )
         {
             if let interpret = self.txtInterpret
             {

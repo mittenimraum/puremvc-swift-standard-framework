@@ -41,7 +41,7 @@ class ApplicationFacade : Facade
         {
             Static.instance = ApplicationFacade ()
         })
-        return Static.instance! as ApplicationFacade
+        return Static.instance! as! ApplicationFacade
     }
     
     override func initializeController ()

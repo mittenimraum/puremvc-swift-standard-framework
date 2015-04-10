@@ -105,12 +105,12 @@ class MacroCommand : Notifier, ICommand
             
             if ( commandInstance is SimpleCommand )
             {
-                ( commandInstance as SimpleCommand ).execute( notification )
+                ( commandInstance as! SimpleCommand ).execute( notification )
             }
             
             if ( commandInstance is MacroCommand )
             {
-                ( commandInstance as MacroCommand ).execute( notification )
+                ( commandInstance as! MacroCommand ).execute( notification )
             }
             
         }

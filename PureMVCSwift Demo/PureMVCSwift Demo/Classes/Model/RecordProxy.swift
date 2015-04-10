@@ -20,7 +20,7 @@ class RecordProxy : Proxy
     {
         get
         {
-            return self.data as Array<RecordVO>
+            return self.data as! Array<RecordVO>
         }
         set
         {

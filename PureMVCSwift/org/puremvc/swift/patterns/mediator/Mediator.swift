@@ -14,7 +14,7 @@ import Foundation
 * @see View
 */
 
-class Mediator : IMediator
+@objc class Mediator : IMediator
 {
     
     var name: String?

@@ -22,7 +22,7 @@ class OverviewMediator : Mediator, IMediator
     {
         get
         {
-            return self.viewComponent as RecordsOverviewController
+            return self.viewComponent as! RecordsOverviewController
         }
     }
     
@@ -53,8 +53,8 @@ class OverviewMediator : Mediator, IMediator
         {
             
             let storyboard = UIStoryboard( name: STORYBOARD_MAIN , bundle: nil )
-            let navigationController = storyboard.instantiateViewControllerWithIdentifier( STORYBOARD_ADD_RECORD ) as UINavigationController
-            let viewController = navigationController.viewControllers.first as RecordsAddController
+            let navigationController = storyboard.instantiateViewControllerWithIdentifier( STORYBOARD_ADD_RECORD ) as! UINavigationController
+            let viewController = navigationController.viewControllers.first as! RecordsAddController
             viewController.genres = recordProxy!.genres
             
             if UIDevice.currentDevice().userInterfaceIdiom == .Pad
@@ -75,7 +75,7 @@ class OverviewMediator : Mediator, IMediator
         else if ( notification.name == EVENT_RECORD_WILL_ADD )
         {
             
-            let record = notification.body as RecordVO
+            let record = notification.body as! RecordVO
             
             self.recordProxy?.addRecord ( record )
             
@@ -84,7 +84,7 @@ class OverviewMediator : Mediator, IMediator
         else if ( notification.name == EVENT_RECORD_DID_ADD )
         {
             
-            let record = notification.body as RecordVO
+            let record = notification.body as! RecordVO
             
             self.controller.records = self.recordProxy?.records
 
@@ -92,7 +92,7 @@ class OverviewMediator : Mediator, IMediator
         else if ( notification.name == EVENT_RECORD_SHOULD_REMOVE )
         {
             
-            let record = notification.body as RecordVO
+            let record = notification.body as! RecordVO
             
             self.recordProxy?.removeRecord( record )
             
@@ -101,7 +101,7 @@ class OverviewMediator : Mediator, IMediator
         else if ( notification.name == EVENT_RECORD_DID_REMOVE )
         {
             
-            let record = notification.body as RecordVO
+            let record = notification.body as! RecordVO
             
             self.controller.records = self.recordProxy?.records
 

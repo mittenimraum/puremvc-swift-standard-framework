@@ -99,10 +99,10 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         if textField.returnKeyType == UIReturnKeyType.Next
         {
             
-            let current = self.tableView.indexPathForCell( textField.superview?.superview? as UITableViewCell )
+            let current = self.tableView.indexPathForCell( textField.superview?.superview as! UITableViewCell )
             let next = tableView.cellForRowAtIndexPath( NSIndexPath( forRow: current!.row + 1 , inSection: 0 ))
 
-            ( next as RecordsAddInputCell ).txtInput.becomeFirstResponder()
+            ( next as! RecordsAddInputCell ).txtInput.becomeFirstResponder()
             
         }
         else if  textField.returnKeyType == UIReturnKeyType.Done
@@ -179,7 +179,7 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         {
         case 0, 1:
             
-            let c = tableView.dequeueReusableCellWithIdentifier( kAddInputCell , forIndexPath: indexPath ) as RecordsAddInputCell
+            let c = tableView.dequeueReusableCellWithIdentifier( kAddInputCell , forIndexPath: indexPath ) as! RecordsAddInputCell
             
             c.txtInput.delegate = self
             
@@ -208,7 +208,7 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
             
         case 2, 3:
             
-            let c = tableView.dequeueReusableCellWithIdentifier( kAddSelectCell , forIndexPath: indexPath ) as RecordsAddSelectCell
+            let c = tableView.dequeueReusableCellWithIdentifier( kAddSelectCell , forIndexPath: indexPath ) as! RecordsAddSelectCell
             
             switch indexPath.row
             {
@@ -265,7 +265,7 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         if segue.identifier == SEGUE_ADD_GENRES
         {
 
-            let genreController = segue.destinationViewController as RecordsAddGenreController
+            let genreController = segue.destinationViewController as! RecordsAddGenreController
             
             genreController.delegate = self
             
@@ -333,7 +333,7 @@ class RecordsAddGenreController : UITableViewController
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier( kGenreCell , forIndexPath: indexPath ) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier( kGenreCell , forIndexPath: indexPath ) as! UITableViewCell
         let genre = delegate!.genres[ indexPath.row ]
         
         cell.textLabel?.text = genre
@@ -349,7 +349,7 @@ class RecordsAddGenreController : UITableViewController
         let cell = tableView.cellForRowAtIndexPath( indexPath )
         let genre = delegate!.genres[ indexPath.row ]
         
-        if var d = delegate?
+        if var d = delegate
         {
             if d.genresSelected.contains( genre )
             {
