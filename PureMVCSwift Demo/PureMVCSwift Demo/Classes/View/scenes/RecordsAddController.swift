@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 Stephan Schulz. All rights reserved.
 //
 
-import Foundation
-import UIKit
+import ActionSheetPicker_3_0
 
 var kAddInputCell : String = "RecordsAddInputCell"
 var kAddSelectCell : String = "RecordsAddSelectCell"
@@ -35,6 +34,8 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
     var txtYear: UILabel?
     var txtGenre: UILabel?
     
+    private var _lastTextfield: UITextField?
+    
     @IBOutlet weak var btnDone: UIBarButtonItem!
 
     override func viewDidLoad()
@@ -42,14 +43,7 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         
         super.viewDidLoad()
         
-        for index in 1900...2099
-        {
-            
-            var year = String( format: "%i", index )
-            
-            years.append( year )
-            
-        }
+        setupYears()
         
     }
     
@@ -58,25 +52,46 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         
         super.viewDidAppear( animated )
         
-        if ( txtInterpret!.text.isEmpty )
+        focusTextfield()
+        
+    }
+    
+    override func viewDidLayoutSubviews()
+    {
+        validateTextfields()
+        updateTextfields()
+    }
+    
+    func setupYears ()
+    {
+        
+        for index in 1900...2099
+        {
+            
+            let year = String( format: "%i", index )
+            
+            years.append( year )
+            
+        }
+        
+    }
+    
+    func focusTextfield ()
+    {
+        
+        if ( txtInterpret!.text!.isEmpty )
         {
             txtInterpret?.becomeFirstResponder()
         }
         
     }
     
-    override func viewDidLayoutSubviews()
+    func validateTextfields()
     {
-        validate()
-        update()
+        self.btnDone.enabled = !txtInterpret!.text!.isEmpty && !txtAlbum!.text!.isEmpty && genres.count > 0 && txtYear?.tag > 0
     }
     
-    func validate()
-    {
-        self.btnDone.enabled = !txtInterpret!.text.isEmpty && !txtAlbum!.text.isEmpty && genres.count > 0 && txtYear?.tag > 0
-    }
-    
-    func update ()
+    func updateTextfields ()
     {
         
         txtGenre?.text = genresSelected.count > 0 ? genresSelected.combine( ", " ) : kLanguageSelectGenres
@@ -117,8 +132,10 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         
         delay( EPSILON )
         {
-            self.validate()
+            self.validateTextfields()
         }
+        
+        _lastTextfield = textField
         
         return true
         
@@ -127,7 +144,7 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
     func textFieldShouldClear(textField: UITextField) -> Bool
     {
         
-        validate()
+        validateTextfields()
         
         return true
         
@@ -141,7 +158,9 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
     @IBAction func onDoneTouched(sender: AnyObject)
     {
         
-        ApplicationFacade.getInstance().sendNotification( EVENT_RECORD_WILL_ADD , body: RecordVO( interpret: txtInterpret?.text , album: txtAlbum?.text , year: txtYear?.text , genres: txtGenre?.text ))
+        let record = RecordVO( interpret: txtInterpret?.text , album: txtAlbum?.text , year: txtYear?.text , genres: txtGenre?.text )
+        
+        ApplicationFacade.getInstance().sendNotification( EVENT_RECORD_WILL_ADD , body: record )
         
         close()
         
@@ -153,8 +172,8 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         txtYear?.text = years[ selectedIndex.integerValue ]
         txtYear?.tag = 1
         
-        validate()
-        update()
+        validateTextfields()
+        updateTextfields()
         
     }
     
@@ -185,22 +204,22 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
             
             switch indexPath.row
             {
-            case 0:
-                
-                c.txtTitle.text = kLanguageInterpret
-                c.txtInput.placeholder = kLanguageEnterInterpret
-                
-                txtInterpret = c.txtInput
-                
-            case 1:
-                
-                c.txtTitle.text = kLanguageAlbum
-                c.txtInput.placeholder = kLanguageEnterAlbum
-                c.txtInput.returnKeyType = UIReturnKeyType.Done
-                
-                txtAlbum = c.txtInput
+                case 0:
+                    
+                    c.txtTitle.text = kLanguageInterpret
+                    c.txtInput.placeholder = kLanguageEnterInterpret
+                    
+                    txtInterpret = c.txtInput
+                    
+                case 1:
+                    
+                    c.txtTitle.text = kLanguageAlbum
+                    c.txtInput.placeholder = kLanguageEnterAlbum
+                    c.txtInput.returnKeyType = UIReturnKeyType.Done
+                    
+                    txtAlbum = c.txtInput
 
-            default :()
+                default :()
                 
             }
             
@@ -212,23 +231,23 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
             
             switch indexPath.row
             {
-            case 2:
-                
-                c.txtTitle.text = kLanguageYear
-                c.txtSelect.text = kLanguageSelectYear
-                
-                txtYear = c.txtSelect
-                
-            case 3:
-                
-                c.txtTitle.text = kLanguageGenres
-                c.txtSelect.text = kLanguageSelectGenres
-                c.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-                
-                txtGenre = c.txtSelect
-                
-            default :()
-            }
+                case 2:
+                    
+                    c.txtTitle.text = kLanguageYear
+                    c.txtSelect.text = kLanguageSelectYear
+                    
+                    txtYear = c.txtSelect
+                    
+                case 3:
+                    
+                    c.txtTitle.text = kLanguageGenres
+                    c.txtSelect.text = kLanguageSelectGenres
+                    c.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+                    
+                    txtGenre = c.txtSelect
+                    
+                default :()
+                }
             
             cell = c
 
@@ -245,16 +264,18 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         
         switch indexPath.row
         {
-        case 2:
+            case 2:
+                
+                _lastTextfield?.resignFirstResponder()
+                
+                ActionSheetStringPicker.showPickerWithTitle( kLanguageSelectYear , rows: years , initialSelection: 115 , target: self , successAction: "onYearSelected:origin:" , cancelAction: nil , origin: txtYear )
+                
+            case 3:
             
-            ActionSheetStringPicker.showPickerWithTitle( kLanguageSelectYear , rows: years , initialSelection: 114 , target: self , successAction: "onYearSelected:origin:" , cancelAction: nil , origin: txtYear )
-            
-        case 3:
-        
-            performSegueWithIdentifier( SEGUE_ADD_GENRES , sender: self )
-            
-        default: ()
-        }
+                performSegueWithIdentifier( SEGUE_ADD_GENRES , sender: self )
+                
+            default: ()
+            }
 
     }
     
@@ -266,119 +287,8 @@ class RecordsAddController : UITableViewController, UITextFieldDelegate, Records
         {
 
             let genreController = segue.destinationViewController as! RecordsAddGenreController
-            
             genreController.delegate = self
             
         }
-    }
-
-    
-}
-
-class RecordsAddInputCell : UITableViewCell
-{
-    
-    @IBOutlet weak var txtTitle: UILabel!
-    @IBOutlet weak var txtInput: UITextField!
-    
-    required init( coder aDecoder: NSCoder )
-    {
-        
-        super.init( coder: aDecoder )
-        
-        self.selectionStyle = UITableViewCellSelectionStyle.None
-        
-    }
-}
-
-class RecordsAddSelectCell : UITableViewCell
-{
-    
-    @IBOutlet weak var txtTitle: UILabel!
-    @IBOutlet weak var txtSelect: UILabel!
-    
-    required init( coder aDecoder: NSCoder )
-    {
-        
-        super.init( coder: aDecoder )
-        
-        self.selectionStyle = UITableViewCellSelectionStyle.None
-        
-    }
-}
-
-protocol RecordsGenreDelegate
-{
-    var genres : Array<String> { get }
-    var genresSelected : Array<String> { get set }
-}
-
-class RecordsAddGenreController : UITableViewController
-{
-    
-    var delegate : RecordsGenreDelegate?
-    
-    // MARK: - Table View
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
-    {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return delegate!.genres.count
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier( kGenreCell , forIndexPath: indexPath ) as! UITableViewCell
-        let genre = delegate!.genres[ indexPath.row ]
-        
-        cell.textLabel?.text = genre
-        cell.accessoryType = delegate!.genresSelected.contains( genre ) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
-
-        return cell
-        
-    }
-    
-    override func tableView( tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath )
-    {
-        
-        let cell = tableView.cellForRowAtIndexPath( indexPath )
-        let genre = delegate!.genres[ indexPath.row ]
-        
-        if var d = delegate
-        {
-            if d.genresSelected.contains( genre )
-            {
-               
-                d.genresSelected.removeObject( genre )
-                
-                cell?.accessoryType = UITableViewCellAccessoryType.None
-                
-            }
-            else
-            {
-                
-                d.genresSelected.append( genre )
-                
-                cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
-                
-            }
-        }
-        
-        delegate!.genresSelected.sort { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
-        
-    }
-    
-    override func viewDidDisappear(animated: Bool)
-    {
-        
-        super.viewDidDisappear( animated )
-        
-        delegate = nil
-        
     }
 }

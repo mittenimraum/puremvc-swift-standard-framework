@@ -15,7 +15,7 @@ extension Array
     {
         if item is Element
         {
-            return find(unsafeBitCast(self, [U].self), item)
+            return unsafeBitCast(self, [U].self).indexOf(item)
         }
         
         return nil
@@ -33,7 +33,7 @@ extension Array
     mutating func removeObject<U: Equatable>(object: U)
     {
         var index: Int?
-        for (idx, objectToCompare) in enumerate(self)
+        for (idx, objectToCompare) in self.enumerate()
         {
             if let to = objectToCompare as? U
             {
@@ -53,7 +53,7 @@ extension Array
     func combine( separator: String ) -> String
     {
         var str : String = ""
-        for (idx, item) in enumerate(self)
+        for (idx, item) in self.enumerate()
         {
             str += "\(item)"
             if idx < self.count-1

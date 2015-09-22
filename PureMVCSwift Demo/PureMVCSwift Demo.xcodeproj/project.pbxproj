@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		228975E55732F03D2E144B6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CF25CEFB29CCEF7395A3BE /* libPods.a */; };
 		D40BF1A219E6921C00FDB633 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF19F19E6921C00FDB633 /* StringExtension.swift */; };
 		D40BF1A419E6921C00FDB633 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */; };
 		D40BF1A619E6922C00FDB633 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */; };
@@ -16,12 +15,13 @@
 		D40BF1AD19E69D2C00FDB633 /* RecordsOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BF1AA19E69D2C00FDB633 /* RecordsOverviewController.swift */; };
 		D45B8A1D19DE96FB002CF664 /* StartupCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45B8A1C19DE96FB002CF664 /* StartupCommand.swift */; };
 		D47F666619E3F42800DB4C3A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F666519E3F42800DB4C3A /* Util.swift */; };
-		D48A859B1AD7C51500477B16 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */; };
 		D4950B1719E280A700AE4D54 /* RecordVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1619E280A700AE4D54 /* RecordVO.swift */; };
 		D4950B1919E280AF00AE4D54 /* RecordProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1819E280AF00AE4D54 /* RecordProxy.swift */; };
-		D4950B1B19E280BF00AE4D54 /* ApplicationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B1A19E280BF00AE4D54 /* ApplicationMediator.swift */; };
 		D4950B2119E2886E00AE4D54 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D4950B1D19E2886E00AE4D54 /* data.json */; };
-		D4950B5919E2B11600AE4D54 /* OverviewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B5819E2B11600AE4D54 /* OverviewMediator.swift */; };
+		D4950B5919E2B11600AE4D54 /* RecordsOverviewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4950B5819E2B11600AE4D54 /* RecordsOverviewMediator.swift */; };
+		D4C830F21BB187B1007523EA /* RecordsAddInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C830F11BB187B1007523EA /* RecordsAddInputCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D4C830F41BB187C6007523EA /* RecordsAddSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C830F31BB187C6007523EA /* RecordsAddSelectCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D4C830F61BB187DE007523EA /* RecordsAddGenreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C830F51BB187DE007523EA /* RecordsAddGenreController.swift */; settings = {ASSET_TAGS = (); }; };
 		D4D4152D19DDB02C001D920F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4152C19DDB02C001D920F /* AppDelegate.swift */; };
 		D4D4153219DDB02C001D920F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D4153019DDB02C001D920F /* Main.storyboard */; };
 		D4D4153419DDB02C001D920F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D4153319DDB02C001D920F /* Images.xcassets */; };
@@ -48,11 +48,12 @@
 		D4D4158719DDB06A001D920F /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4156B19DDB06A001D920F /* Notifier.swift */; };
 		D4D4158819DDB06A001D920F /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4156C19DDB06A001D920F /* Observer.swift */; };
 		D4D4158919DDB06A001D920F /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4156E19DDB06A001D920F /* Proxy.swift */; };
+		D50F57F7874CADCC881AC0F1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6D1F742A74E012E010E9DE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15CF25CEFB29CCEF7395A3BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C72CCE349394302ABE3603 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9F6D1F742A74E012E010E9DE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40BF19F19E6921C00FDB633 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
@@ -62,12 +63,13 @@
 		D43AECE719E3219E00DADC22 /* Objective-C-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C-Bridge.h"; sourceTree = "<group>"; };
 		D45B8A1C19DE96FB002CF664 /* StartupCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupCommand.swift; sourceTree = "<group>"; };
 		D47F666519E3F42800DB4C3A /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D4950B1619E280A700AE4D54 /* RecordVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVO.swift; sourceTree = "<group>"; };
 		D4950B1819E280AF00AE4D54 /* RecordProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordProxy.swift; sourceTree = "<group>"; };
-		D4950B1A19E280BF00AE4D54 /* ApplicationMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationMediator.swift; sourceTree = "<group>"; };
 		D4950B1E19E2886E00AE4D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/data.json; sourceTree = "<group>"; };
-		D4950B5819E2B11600AE4D54 /* OverviewMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewMediator.swift; sourceTree = "<group>"; };
+		D4950B5819E2B11600AE4D54 /* RecordsOverviewMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsOverviewMediator.swift; sourceTree = "<group>"; };
+		D4C830F11BB187B1007523EA /* RecordsAddInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsAddInputCell.swift; sourceTree = "<group>"; };
+		D4C830F31BB187C6007523EA /* RecordsAddSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsAddSelectCell.swift; sourceTree = "<group>"; };
+		D4C830F51BB187DE007523EA /* RecordsAddGenreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsAddGenreController.swift; sourceTree = "<group>"; };
 		D4D4152719DDB02C001D920F /* PureMVCSwift Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PureMVCSwift Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D4152B19DDB02C001D920F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4D4152C19DDB02C001D920F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228975E55732F03D2E144B6D /* libPods.a in Frameworks */,
+				D50F57F7874CADCC881AC0F1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +116,7 @@
 		17B60CAC95927536BC8C2B6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15CF25CEFB29CCEF7395A3BE /* libPods.a */,
+				9F6D1F742A74E012E010E9DE /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +135,6 @@
 			children = (
 				D40BF1A519E6922C00FDB633 /* ArrayExtension.swift */,
 				D40BF19F19E6921C00FDB633 /* StringExtension.swift */,
-				D48A859A1AD7C51500477B16 /* SwiftyJSON.swift */,
 				D40BF1A119E6921C00FDB633 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -142,6 +143,7 @@
 		D40BF1A719E69D2C00FDB633 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D4C830F01BB187A5007523EA /* add */,
 				D40BF1A819E69D2C00FDB633 /* RecordsAddController.swift */,
 				D40BF1A919E69D2C00FDB633 /* RecordsDetailController.swift */,
 				D40BF1AA19E69D2C00FDB633 /* RecordsOverviewController.swift */,
@@ -166,6 +168,16 @@
 				D4950B1D19E2886E00AE4D54 /* data.json */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		D4C830F01BB187A5007523EA /* add */ = {
+			isa = PBXGroup;
+			children = (
+				D4C830F11BB187B1007523EA /* RecordsAddInputCell.swift */,
+				D4C830F31BB187C6007523EA /* RecordsAddSelectCell.swift */,
+				D4C830F51BB187DE007523EA /* RecordsAddGenreController.swift */,
+			);
+			path = add;
 			sourceTree = "<group>";
 		};
 		D4D4151E19DDB02C001D920F = {
@@ -250,8 +262,7 @@
 			children = (
 				D4D4155219DDB053001D920F /* components */,
 				D40BF1A719E69D2C00FDB633 /* scenes */,
-				D4950B1A19E280BF00AE4D54 /* ApplicationMediator.swift */,
-				D4950B5819E2B11600AE4D54 /* OverviewMediator.swift */,
+				D4950B5819E2B11600AE4D54 /* RecordsOverviewMediator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 				D4D4152419DDB02C001D920F /* Frameworks */,
 				D4D4152519DDB02C001D920F /* Resources */,
 				8423198FEE99301BF7C0EE40 /* Copy Pods Resources */,
+				537DAF24931972F0767F2761 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,7 +420,9 @@
 		D4D4151F19DDB02C001D920F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stephan Schulz";
 				TargetAttributes = {
 					D4D4152619DDB02C001D920F = {
@@ -464,6 +478,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		537DAF24931972F0767F2761 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8423198FEE99301BF7C0EE40 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,9 +529,8 @@
 				D4D4152D19DDB02C001D920F /* AppDelegate.swift in Sources */,
 				D4D4155319DDB053001D920F /* ApplicationFacade.swift in Sources */,
 				D4D4157E19DDB06A001D920F /* INotifier.swift in Sources */,
-				D4950B5919E2B11600AE4D54 /* OverviewMediator.swift in Sources */,
-				D48A859B1AD7C51500477B16 /* SwiftyJSON.swift in Sources */,
-				D4950B1B19E280BF00AE4D54 /* ApplicationMediator.swift in Sources */,
+				D4C830F41BB187C6007523EA /* RecordsAddSelectCell.swift in Sources */,
+				D4950B5919E2B11600AE4D54 /* RecordsOverviewMediator.swift in Sources */,
 				D4D4157519DDB06A001D920F /* Controller.swift in Sources */,
 				D4D4158119DDB06A001D920F /* IView.swift in Sources */,
 				D4D4158819DDB06A001D920F /* Observer.swift in Sources */,
@@ -510,6 +538,7 @@
 				D4D4158919DDB06A001D920F /* Proxy.swift in Sources */,
 				D4D4158519DDB06A001D920F /* Mediator.swift in Sources */,
 				D40BF1A419E6921C00FDB633 /* UIColorExtension.swift in Sources */,
+				D4C830F61BB187DE007523EA /* RecordsAddGenreController.swift in Sources */,
 				D40BF1AD19E69D2C00FDB633 /* RecordsOverviewController.swift in Sources */,
 				D40BF1AB19E69D2C00FDB633 /* RecordsAddController.swift in Sources */,
 				D47F666619E3F42800DB4C3A /* Util.swift in Sources */,
@@ -522,6 +551,7 @@
 				D4D4158019DDB06A001D920F /* IProxy.swift in Sources */,
 				D4D4157F19DDB06A001D920F /* IObserver.swift in Sources */,
 				D4950B1719E280A700AE4D54 /* RecordVO.swift in Sources */,
+				D4C830F21BB187B1007523EA /* RecordsAddInputCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +605,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -640,8 +671,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PureMVCSwift Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PODS_ROOT = "$(SRCROOT)/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephanschulz.puremvc.swift.standard.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PureMVCSwift Demo/Objective-C-Bridge.h";
 			};
@@ -653,8 +686,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "PureMVCSwift Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PODS_ROOT = "$(SRCROOT)/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephanschulz.puremvc.swift.standard.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PureMVCSwift Demo/Objective-C-Bridge.h";
 			};

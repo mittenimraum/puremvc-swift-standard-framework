@@ -30,7 +30,7 @@
 * @see IView, IObserver
 */
 
-@objc protocol INotification
+protocol INotification
 {
     
     /**

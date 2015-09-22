@@ -149,12 +149,12 @@ class View : IView
      
         self.mediatorMap[ mediator.name! ] = mediator
         
-        var interests : Array<String> = mediator.listNotificationInterests()
+        let interests : Array<String> = mediator.listNotificationInterests()
 
         if ( interests.count > 0 )
         {
             
-            var observer : IObserver = Observer.withNotifyMethod( mediator.handleNotification! , notifyContext: mediator.context() )
+            let observer : IObserver = Observer.withNotifyMethod( mediator.handleNotification , notifyContext: mediator.context() )
 
             for notificationName in interests
             {
@@ -201,12 +201,12 @@ class View : IView
     func removeMediator( mediatorName: String ) -> IMediator
     {
         
-        var mediator : IMediator? = self.mediatorMap[ mediatorName ]!
+        let mediator : IMediator? = self.mediatorMap[ mediatorName ]!
         
         if ( mediator != nil )
         {
             
-            var interests : Array<String> = mediator!.listNotificationInterests()
+            let interests : Array<String> = mediator!.listNotificationInterests()
             
             for notificationName in interests
             {
@@ -237,7 +237,7 @@ class View : IView
             for var i : Int = 0; i < observers!.count; ++i
             {
                 
-                var observer : IObserver = observers![ i ]
+                let observer : IObserver = observers![ i ]
                 
                 if ( observer.compareNotifyContext( notifyContext ))
                 {

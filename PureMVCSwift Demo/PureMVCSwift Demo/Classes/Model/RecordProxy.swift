@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Stephan Schulz. All rights reserved.
 //
 
-import Foundation
+import SwiftyJSON
 
 class RecordProxy : Proxy
 {
@@ -53,9 +53,19 @@ class RecordProxy : Proxy
         
         let bundle = NSBundle.mainBundle()
         let path = bundle.pathForResource( "data" , ofType: "json" )
-        let data = NSData( contentsOfFile: path! , options: NSDataReadingOptions.DataReadingUncached , error: &error )
+        let data: NSData?
+        
+        do
+        {
+            data = try NSData( contentsOfFile: path! , options: NSDataReadingOptions.DataReadingUncached )
+        }
+        catch let error1 as NSError
+        {
+            error = error1
+            data = nil
+        }
+        
         let json = JSON( data: data! )
-
         var records : Array<RecordVO> = []
      
         for record in json[ "records" ].array!
@@ -77,12 +87,12 @@ class RecordProxy : Proxy
     
     func sortRecordsByInterpret ()
     {
-        records.sort { $0.interpret?.localizedCaseInsensitiveCompare( $1.interpret! ) == NSComparisonResult.OrderedAscending }
+        records.sortInPlace { $0.interpret?.localizedCaseInsensitiveCompare( $1.interpret! ) == NSComparisonResult.OrderedAscending }
     }
     
     func sortGenresByName ()
     {
-        genres.sort { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
+        genres.sortInPlace { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
     }
     
     func addRecord ( record: RecordVO )

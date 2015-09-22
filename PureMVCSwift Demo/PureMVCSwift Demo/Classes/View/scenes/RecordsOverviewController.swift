@@ -25,7 +25,7 @@ class RecordsOverviewController : UITableViewController
                 
                 self.tableView.beginUpdates()
                 
-                for ( index, record ) in enumerate( oldValue! )
+                for ( index, record ) in (oldValue!).enumerate()
                 {
                     
                     let recordWasRemoved = !self.records!.contains( record )
@@ -37,7 +37,7 @@ class RecordsOverviewController : UITableViewController
                     
                 }
                 
-                for ( index, record ) in enumerate( self.records! )
+                for ( index, record ) in (self.records!).enumerate()
                 {
                     
                     let recordWasAdded = !oldValue!.contains( record )
@@ -77,11 +77,7 @@ class RecordsOverviewController : UITableViewController
         
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onAddRecord:" )
-        self.navigationItem.rightBarButtonItem = addButton
+        setupNavigationBar()
         
     }
     
@@ -90,11 +86,30 @@ class RecordsOverviewController : UITableViewController
         
         super.viewWillAppear( animated )
         
+        setupForiPad()
+        
+    }
+    
+    func setupNavigationBar ()
+    {
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "didPressAdd:" )
+        self.navigationItem.rightBarButtonItem = addButton
+        
+    }
+    
+    func setupForiPad ()
+    {
+        
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad
         {
             self.tableView.selectRowAtIndexPath( NSIndexPath( forRow: 0 , inSection: 0 ) , animated: false, scrollPosition: UITableViewScrollPosition.Top )
             self.performSegueWithIdentifier( SEGUE_OVERVIEW_DETAIL , sender: self )
         }
+
     }
     
     // MARK: - Segues
@@ -115,7 +130,7 @@ class RecordsOverviewController : UITableViewController
     func showDetailViewController( vc: RecordsDetailController )
     {
         
-        if let indexPath = self.tableView.indexPathForSelectedRow()
+        if let indexPath = self.tableView.indexPathForSelectedRow
         {
             
             let record = records?[ indexPath.row ]
@@ -147,7 +162,7 @@ class RecordsOverviewController : UITableViewController
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier( kOverviewCell , forIndexPath: indexPath) 
         let record = records?[ indexPath.row ]
 
         cell.textLabel?.text = record?.interpret
@@ -182,7 +197,7 @@ class RecordsOverviewController : UITableViewController
         }
     }
 
-    func onAddRecord( sender: AnyObject )
+    func didPressAdd( sender: AnyObject )
     {
         ApplicationFacade.getInstance().sendNotification( EVENT_RECORD_SHOULD_ADD )
     }

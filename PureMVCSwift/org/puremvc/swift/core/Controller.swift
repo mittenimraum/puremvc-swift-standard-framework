@@ -121,9 +121,9 @@ class Controller : IController
     func executeCommand ( notification: INotification )
     {
         
-        var commandClass : Notifier.Type = self.commandMap[ notification.name! ]!;
+        let commandClass : Notifier.Type = self.commandMap[ notification.name! ]!;
 
-        var commandInstance = commandClass()
+        let commandInstance = commandClass.init()
         
         if ( commandInstance is SimpleCommand )
         {
@@ -169,7 +169,7 @@ class Controller : IController
         if ( self.commandMap[ notificationName ] == nil )
         {
             
-            var observer : IObserver = Observer.withNotifyMethod ( executeCommand , notifyContext: self )
+            let observer : IObserver = Observer.withNotifyMethod ( executeCommand , notifyContext: self )
             
             self.view?.registerObserver( notificationName , observer: observer )
             

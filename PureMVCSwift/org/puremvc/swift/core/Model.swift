@@ -131,7 +131,7 @@ class Model : IModel
     func removeProxy( proxyName: String ) -> IProxy
     {
         
-        var proxy : IProxy? = self.proxyMap[ proxyName ]!
+        let proxy : IProxy? = self.proxyMap[ proxyName ]!
         
         if ( proxy != nil )
         {

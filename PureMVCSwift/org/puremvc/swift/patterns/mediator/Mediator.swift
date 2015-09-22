@@ -14,7 +14,7 @@ import Foundation
 * @see View
 */
 
-@objc class Mediator : IMediator
+class Mediator : IMediator
 {
     
     var name: String?
@@ -56,8 +56,8 @@ import Foundation
     init( mediatorName: String? , viewComponent: AnyObject? )
     {
         
-        self.name = mediatorName!;
-        self.viewComponent = viewComponent!;
+        self.name = mediatorName!
+        self.viewComponent = viewComponent!
         
         self.initializeMediator()
         

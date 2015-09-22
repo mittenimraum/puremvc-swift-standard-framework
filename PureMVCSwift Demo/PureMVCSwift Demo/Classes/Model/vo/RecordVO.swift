@@ -6,7 +6,12 @@
 //  Copyright (c) 2014 Stephan Schulz. All rights reserved.
 //
 
-import Foundation
+import SwiftyJSON
+
+func == ( a: RecordVO, b: RecordVO ) -> Bool
+{
+    return a.interpret == b.interpret && a.album == b.album && a.year == b.year && a.genres == b.genres
+}
 
 class RecordVO : Equatable
 {
@@ -36,7 +41,7 @@ class RecordVO : Equatable
     {
         
         var a : Array = self.genres!.componentsSeparatedByString( ", " )
-        a.sort { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
+        a.sortInPlace { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
         
         return a.combine( ", " )
 
@@ -44,7 +49,3 @@ class RecordVO : Equatable
     
 }
 
-func == ( a: RecordVO, b: RecordVO ) -> Bool
-{
-    return a.interpret == b.interpret && a.album == b.album && a.year == b.year && a.genres == b.genres
-}

@@ -9,6 +9,6 @@
 #ifndef PureMVCSwift_Demo_Objective_C_Bridge_h
 #define PureMVCSwift_Demo_Objective_C_Bridge_h
 
-#import "ActionSheetStringPicker.h"
+#import <UIKit/UIKit.h>
 
 #endif

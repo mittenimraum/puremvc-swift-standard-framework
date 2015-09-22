@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate
 {
     
     var window: UIWindow?
@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         
         let splitViewController = self.window!.rootViewController as! UISplitViewController
+        splitViewController.delegate = self
+
+        let navigationController = splitViewController.viewControllers[ splitViewController.viewControllers.count - 1 ] as! UINavigationController
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         
         ApplicationFacade.getInstance().startup( splitViewController )
         
@@ -51,6 +55,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool
+    {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? RecordsDetailController else { return false }
+        if topAsDetailController.record == nil
+        {
+            // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+            return true
+        }
+        return false
+    }
+    
+    func splitViewController(svc: UISplitViewController, shouldHideViewController vc: UIViewController, inOrientation orientation: UIInterfaceOrientation) -> Bool
+    {
+        return false
+    }
+
     
 }
 

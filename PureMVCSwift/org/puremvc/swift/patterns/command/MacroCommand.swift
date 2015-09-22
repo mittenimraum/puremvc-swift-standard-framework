@@ -101,7 +101,7 @@ class MacroCommand : Notifier, ICommand
         for commandClass : Notifier.Type in self.subCommands!
         {
            
-            let commandInstance = commandClass()
+            let commandInstance = commandClass.init()
             
             if ( commandInstance is SimpleCommand )
             {

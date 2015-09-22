@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://upload.wikimedia.org/wikipedia/en/4/43/Apple_Swift_Logo.png">
+  <img src="Swift.png">
 </p>
 
 ## [PureMVC](http://puremvc.github.com/) Swift Standard Framework

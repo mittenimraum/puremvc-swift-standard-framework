@@ -33,7 +33,7 @@ import Foundation
 *
 */
 
-@objc class Notification : INotification
+class Notification : INotification
 {
     
     var name : String?
