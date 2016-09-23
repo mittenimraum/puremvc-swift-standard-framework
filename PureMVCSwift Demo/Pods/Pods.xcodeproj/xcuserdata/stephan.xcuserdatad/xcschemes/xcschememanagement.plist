@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-PureMVCSwift Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B7D7A0AA7798A172C48B72826F876B93</key>
+		<key>053617A05C5A952CF2888B88D119FE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB4B2C67AA7B94B6B9912408BB4BFA79</key>
+		<key>733DF4865A6616F1264CC6F3886AA903</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F160E6244221925CC4E880207CAD7D05</key>
+		<key>AAAC22CFAEB901785E9D2DB73C887D06</key>
 		<dict>
 			<key>primary</key>
 			<true/>

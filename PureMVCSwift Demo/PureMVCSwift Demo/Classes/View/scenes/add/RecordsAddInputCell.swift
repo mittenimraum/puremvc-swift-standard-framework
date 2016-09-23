@@ -8,18 +8,15 @@
 
 import UIKit
 
-class RecordsAddInputCell : UITableViewCell
-{
-    
+class RecordsAddInputCell: UITableViewCell {
+
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtInput: UITextField!
-    
-    required init?( coder aDecoder: NSCoder )
-    {
-        
-        super.init( coder: aDecoder )
-        
+
+    required init?(coder aDecoder: NSCoder) {
+
+        super.init(coder: aDecoder)
+
         self.selectionStyle = UITableViewCellSelectionStyle.None
-        
     }
 }

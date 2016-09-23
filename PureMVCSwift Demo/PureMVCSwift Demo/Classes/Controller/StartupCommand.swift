@@ -8,19 +8,15 @@
 
 import UIKit
 
-class StartupCommand : SimpleCommand
-{
-    
-    override func execute(notification: INotification)
-    {
-        
-        let root = notification.body as! UISplitViewController
-        let overview = root.viewControllers[ 0 ] as! UINavigationController
-        
-        facade.registerProxy( RecordProxy( proxyName: RecordProxy.NAME()))
+class StartupCommand: SimpleCommand {
 
-        facade.registerMediator( RecordsOverviewMediator( mediatorName: RecordsOverviewMediator.NAME() , viewComponent: overview.topViewController ))
-        
+    override func execute(notification: INotification) {
+
+        let root = notification.body as! UISplitViewController
+        let overview = root.viewControllers[0] as! UINavigationController
+
+        facade.registerProxy(RecordProxy(proxyName: RecordProxy.NAME()))
+
+        facade.registerMediator(RecordsOverviewMediator(mediatorName: RecordsOverviewMediator.NAME(), viewComponent: overview.topViewController))
     }
-    
 }

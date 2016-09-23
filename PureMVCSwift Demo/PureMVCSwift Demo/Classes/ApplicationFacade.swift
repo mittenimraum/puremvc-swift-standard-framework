@@ -27,30 +27,23 @@ let COLOR_LIGHT_GRAY = "#C4C4C9"
 
 let EPSILON = 0.001
 
-class ApplicationFacade : Facade
-{
+class ApplicationFacade: Facade {
 
-    func startup( root : AnyObject )
-    {
-        sendNotification( COMMAND_STARTUP , body: root )
+    func startup(root: AnyObject) {
+        sendNotification(COMMAND_STARTUP, body: root)
     }
-    
-    override class func getInstance() -> ApplicationFacade
-    {
-        dispatch_once( &Static.onceToken ,
-        {
-            Static.instance = ApplicationFacade ()
+
+    override class func getInstance() -> ApplicationFacade {
+        dispatch_once(&Static.onceToken, {
+            Static.instance = ApplicationFacade()
         })
         return Static.instance! as! ApplicationFacade
     }
-    
-    override func initializeController ()
-    {
-    
+
+    override func initializeController() {
+
         super.initializeController()
 
-        registerCommand( COMMAND_STARTUP , commandClass: StartupCommand.self )
-    
+        registerCommand(COMMAND_STARTUP, commandClass: StartupCommand.self)
     }
-    
 }

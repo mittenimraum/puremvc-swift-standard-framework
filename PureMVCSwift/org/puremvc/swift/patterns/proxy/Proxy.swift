@@ -8,100 +8,86 @@
 
 import Foundation
 
-class Proxy : NSObject, IProxy
-{
-    
-    /**
-    * A base <code>IProxy</code> implementation.
-    *
-    * <P>
-    * In PureMVC, <code>Proxy</code> classes are used to manage parts of the
-    * application's data model. </P>
-    *
-    * <P>
-    * A <code>Proxy</code> might simply manage a reference to a local data object,
-    * in which case interacting with it might involve setting and
-    * getting of its data in synchronous fashion.</P>
-    *
-    * <P>
-    * <code>Proxy</code> classes are also used to encapsulate the application's
-    * interaction with remote services to save or retrieve data, in which case,
-    * we adopt an asyncronous idiom; setting data (or calling a method) on the
-    * <code>Proxy</code> and listening for a <code>Notification</code> to be sent
-    * when the <code>Proxy</code> has retrieved the data from the service. </P>
-    * 
-    * @see Model
-    */
-    
+class Proxy: NSObject, IProxy {
+
+    /** 
+     * A base <code>IProxy</code> implementation.
+     *
+     * <P>
+     * In PureMVC, <code>Proxy</code> classes are used to manage parts of the
+     * application's data model. </P>
+     *
+     * <P>
+     * A <code>Proxy</code> might simply manage a reference to a local data object,
+     * in which case interacting with it might involve setting and
+     * getting of its data in synchronous fashion.</P>
+     *
+     * <P>
+     * <code>Proxy</code> classes are also used to encapsulate the application's
+     * interaction with remote services to save or retrieve data, in which case,
+     * we adopt an asyncronous idiom; setting data (or calling a method) on the
+     * <code>Proxy</code> and listening for a <code>Notification</code> to be sent
+     * when the <code>Proxy</code> has retrieved the data from the service. </P>
+     *
+     * @see Model
+     */
+
     var data: AnyObject?
     var proxyName: String?
-    
-    class func NAME () -> String
-    {
-        return "Proxy";
+
+    class func NAME() -> String {
+        return "Proxy"
     }
-    
-    class func proxy () -> Proxy
-    {
-        return Proxy( proxyName: nil , data: nil )
+
+    class func proxy() -> Proxy {
+        return Proxy(proxyName: nil, data: nil)
     }
-    
-    init( proxyName: String? )
-    {
-        
+
+    init(proxyName: String?) {
+
         super.init()
-        
-        initialize( proxyName , data: nil )
-        
+
+        initialize(proxyName, data: nil)
     }
-    
-    init( proxyName: String? , data: AnyObject? )
-    {
-        
+
+    init(proxyName: String?, data: AnyObject?) {
+
         super.init()
-        
-        initialize( proxyName , data: data )
-        
+
+        initialize(proxyName, data: data)
     }
-    
-    func initialize ( proxyName: String? , data: AnyObject? )
-    {
-        
+
+    func initialize(proxyName: String?, data: AnyObject?) {
+
         self.proxyName = proxyName
         self.data = data
-        
+
         self.initializeProxy()
-        
-    }
-    
-    /**
-    * Initialize the Proxy instance.
-    *
-    * <P>
-    * Called automatically by the constructor, this
-    * is your opportunity to initialize the Proxy
-    * instance in your subclass without overriding the
-    * constructor.</P>
-    *
-    * @return void
-    */
-    func initializeProxy ()
-    {
-
-    }
-    
-    /**
-    * Called by the Model when the Proxy is registered
-    */ 
-    func onRegister ()
-    {
-    }
-    
-    /**
-    * Called by the Model when the Proxy is removed
-    */ 
-    func onRemove ()
-    {
     }
 
+    /** 
+     * Initialize the Proxy instance.
+     *
+     * <P>
+     * Called automatically by the constructor, this
+     * is your opportunity to initialize the Proxy
+     * instance in your subclass without overriding the
+     * constructor.</P>
+     *
+     * @return void
+     */
+    func initializeProxy() {
+    }
+
+    /** 
+     * Called by the Model when the Proxy is registered
+     */
+    func onRegister() {
+    }
+
+    /** 
+     * Called by the Model when the Proxy is removed
+     */
+    func onRemove() {
+    }
 }

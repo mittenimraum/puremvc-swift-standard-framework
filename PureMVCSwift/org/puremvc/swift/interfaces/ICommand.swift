@@ -6,22 +6,19 @@
 //  Copyright (c) 2014 Stephan Schulz. All rights reserved.
 //
 
-/**
-* The interface definition for a PureMVC Command.
-*
-* @see INotification
-*/
+/** 
+ * The interface definition for a PureMVC Command.
+ *
+ * @see INotification
+ */
 
-protocol ICommand
-{
-    
-    /**
-    * Execute the <code>ICommand</code>'s logic to handle a given <code>INotification</code>.
-    *
-    * @param notification an <code>INotification</code> to handle.
-    */
-    
-    func execute ( notification: INotification )
-    
+protocol ICommand {
+
+    /** 
+     * Execute the <code>ICommand</code>'s logic to handle a given <code>INotification</code>.
+     *
+     * @param notification an <code>INotification</code> to handle.
+     */
+
+    func execute(notification: INotification)
 }
-
